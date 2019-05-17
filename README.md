@@ -1,5 +1,7 @@
 
-<h1>Dockerfile<h1>
+<h1>Docker</h1>
+
+Dockerfile definition:
 
 FROM org.example/centos:7.6.1810
 
@@ -7,7 +9,7 @@ RUN curl -sL http://rpm.nodesource.com/setup_8.x | bash -
 RUN yum -y-install nodejs
 RUN node --version
 
-Dockerfile
+----------------------------------------------------------
 
 FROM org.example/nodejs:8.x
 
