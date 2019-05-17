@@ -1,5 +1,5 @@
 
-Dockerfile
+<h1>Dockerfile<h1>
 
 FROM org.example/centos:7.6.1810
 
@@ -47,6 +47,8 @@ Remover un container Docker
  * docker rm -f <CONTAINER_ID>
    Ejemplo: docker rm -f fa4ea442aeb
 
+<h1>Amazon AWS ECS/ECR</h1>
+
 Obtener credenciales para acceder a Docker en ECR AWS
  * aws ecr get-login --region us-east-1 --no-include-email
 
@@ -65,7 +67,7 @@ Prueba de ejecución de imagen Docker
    Ejemplo: container run -rm -p <8080>:<8080> 08789734324.dkr.ecr.us-east-1.amazonaws.com/org.example/nodejs:8.x
 
 
-Infraestructura AWS
+<h1>Terraform</h1>
 
 Crear una infraestructura en AWS utilizando Terraform
 
