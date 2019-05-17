@@ -1,4 +1,23 @@
 
+Dockerfile
+
+FROM org.example/centos:7.6.1810
+
+RUN curl -sL http://rpm.nodesource.com/setup_8.x | bash -
+RUN yum -y-install nodejs
+RUN node --version
+
+Dockerfile
+
+FROM org.example/nodejs:8.x
+
+EXPOSE 2525
+CMD ["start"]
+RUN npm install -g mountebank --production
+ENTRYPOINT ["mb"]
+
+
+
 
 Construir una imagen a partir de un archivo Dockerfile
  * docker build -t <IMAGE_NAME> -f Dockerfile
@@ -16,10 +35,13 @@ Listar imagenes Docker
  * docker images
 
 Listar contenedores Docker
- * docker ps
+ * docker ps -a
 
 Remover una imagen
  * docker rmi org.example/nodejs/myapp
+
+Remover todas las imagenes
+ * docker image prune -a
 
 Remover un container Docker
  * docker rm -f <CONTAINER_ID>
