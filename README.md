@@ -84,7 +84,9 @@ Ejecutar un plan
 
 Aplicar los cambios a la infraestructura
  * terraform apply -auto-approve
-
+ * terraform apply -auto-approve -target="module.modulename.aws_resource.arm" 
+ Ejemplo: terraform apply -auto-approve -target="module.repositories.aws_ecr_resource.shared_state"
+ 
 Destruir la infraestructura creada
  * terraform destroy -auto-approve
  * terraform destroy -target="aws_element.name"
