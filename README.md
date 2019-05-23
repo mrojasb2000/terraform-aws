@@ -78,6 +78,7 @@ Crear una infraestructura en AWS utilizando Terraform
 
 Inicialización de projecto Terraform
  * terraform init
+ * terrafom init -backend-config="ci.tfbackend"
 
 Ejecutar un plan
  * terraform plan
