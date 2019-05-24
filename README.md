@@ -97,10 +97,10 @@ Mostrar elemtos configurados
  * terraform show   
 
 Crear butcket inicial en AWS
- * terraform init <context>\boot
- * terraform apply <context>\boot
+ * terraform init [context]\boot
+ * terraform apply [context]\boot
  
 Crear resto de la infraestructura
- * terraform init <context>
- * terraform apply <context>
+ * terraform init [context]
+ * terraform apply [context]
   
