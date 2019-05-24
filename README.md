@@ -20,7 +20,7 @@ CMD ["start"]
 RUN npm install -g mountebank --production
 ENTRYPOINT ["mb"]
 
-
+----------------------------------------------------------
 
 
 Construir una imagen a partir de un archivo Dockerfile
@@ -95,3 +95,12 @@ Destruir la infraestructura creada
 
 Mostrar elemtos configurados
  * terraform show   
+
+Crear butcket inicial en AWS
+ * terraform init <context>\boot
+ * terraform apply <context>\boot
+ 
+Crear resto de la infraestructura
+ * terraform init <context>
+ * terraform apply <context>
+  
