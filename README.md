@@ -104,3 +104,5 @@ Crear resto de la infraestructura
  * terraform init [context]
  * terraform apply [context]
   
+Batch commands
+ * for i in {1..11}; do `mkdir chapter$i`; done
